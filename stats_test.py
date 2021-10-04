@@ -17,7 +17,7 @@ class StatsTest(TestCase):
 
     def test_variance_throws_exception(self):
         """variance of an empty list should raise an exception"""
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             var = variance([])
 
 if __name__ == '__main__':
